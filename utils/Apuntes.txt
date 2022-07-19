@@ -1,0 +1,3 @@
+- Create a project React:
+npx create-react-app portfolio-web
+
