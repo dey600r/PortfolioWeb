@@ -1,14 +1,19 @@
+// REACT
 import React from "react";
+import { Link } from "react-router-dom";
+
+// MATERIAL
 import {
   Drawer, List, ListItem, ListItemText, Typography
 } from '@material-ui/core';
-import { Link } from "react-router-dom";
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import { styled } from '@mui/material/styles';
-import Constants from "../core/constants";
 
-function RightMenu(props) {
+// COMPOENTS
+import Constants from "../../core/constants";
+
+function SideMenu(props) {
   
   const closeLeftMenu = () => {
     props.onClickOutside();
@@ -52,4 +57,4 @@ function RightMenu(props) {
   );
 }
 
-export default RightMenu;
+export default SideMenu;

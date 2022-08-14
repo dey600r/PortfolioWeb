@@ -1,12 +1,15 @@
 
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import './App.css';
+// REACT
 import React from 'react';
-import Header from './components/header';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// COMPONENTS
+import './App.css';
 import Home from './pages/home';
-import Footer from './components/footer';
 import Details from "./pages/details";
+import Header from './shared/common/header';
+import Footer from './shared/common/footer';
 import Constants from "./core/constants";
 
 function App() {

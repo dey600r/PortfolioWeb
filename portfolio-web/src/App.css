@@ -12,8 +12,7 @@
 
 /* HEADER */
 .header {
-  height: 100px;
-  /* background-color: var(--color-background-header); */
+  height: 90px;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -32,7 +31,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin: 30px 15px 10px 40px;
+  margin: 25px 15px 10px 40px;
   box-shadow: 4px 2px 6px var(--color-shadow-img); 
 }
 
@@ -48,10 +47,36 @@
 
 .header-title {
   font-style: italic;
-  /* color: var(--color-text-header); */
-  margin: 10px 10px 30px 10px;
-  flex: 1 1 auto;
+  margin: 0px 10px 0px 5px;
   text-align: initial;
+}
+
+.header-subtitle {
+  font-style: italic;
+  padding: 0px 10px 30px 5px;
+  margin: 0px;
+  text-align: initial;
+}
+
+.header-button-menu {
+  padding-bottom: 20px
+}
+
+@media (max-width: 600px) {
+  .header-image-size {
+    width: 80px;
+    height: 80px;
+    margin: 30px 15px 10px 5px;
+  }
+
+  .header-subtitle {
+    font-size: 0.7em;
+    padding: 0px 0px 5px 0px;
+  }
+
+  .header-title {
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 /* BODY */
@@ -61,15 +86,15 @@
 }
 
 .body {
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 
 .body-home {
-  padding-top: 150px;
+  padding-top: 90px;
 }
 
 .body-details {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 .menu {
@@ -95,6 +120,17 @@
 .image-card:hover {
   box-shadow: 4px 4px 6px var(--color-shadow-img);
   cursor: pointer;
+}
+
+.image-card-detail {
+  width: 90%;
+  height: 100%;
+}
+
+.box-image-card-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-info {
@@ -150,7 +186,7 @@
   padding: 30px 80px 30px 80px;
   margin: 44px;
   background-color: var(--color-background-card);
-  border-radius: 50px;
+  border-radius: 25px;
   transition: opacity var(--transition-time);
   opacity: 0;
 }
@@ -159,7 +195,7 @@
   border-width: 7px;
   border-style: solid;
   border-color: var(--color-background-card);
-  border-radius: 37px;
+  border-radius: 25px;
   margin: 50px;
   background: var(--color-background-card)
 }
@@ -211,6 +247,10 @@
   flex-direction: row;
   align-items: center;
   /* justify-content: center; */
+}
+
+.all-row {
+  flex: 1 1 auto;
 }
 
 .show-info {
