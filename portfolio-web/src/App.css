@@ -178,6 +178,16 @@
   opacity: 0;
 }
 
+.title-card {
+  background-color: var(--color-background-card);
+  margin: 35px;
+  border-radius: 15px
+}
+
+.title-card-description {
+  padding: 10px 30px 25px 30px;
+}
+
 .image-card-description {
   width: 60%;
 }
@@ -196,7 +206,7 @@
   border-style: solid;
   border-color: var(--color-background-card);
   border-radius: 25px;
-  margin: 50px;
+  margin: 35px;
   background: var(--color-background-card)
 }
 
@@ -246,7 +256,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .all-row {
@@ -255,4 +265,27 @@
 
 .show-info {
   opacity: 1;
+}
+
+.hidde-info {
+  display: none;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 8px;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+ /* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 8px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-shadow-img);
+  border-radius: 10px;
 }
