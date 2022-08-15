@@ -17,7 +17,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Router>
+      <Router basename='https://dey600r.github.io/PortfolioWeb/'>
         <div className="App">
           <Header/>
           <Switch>

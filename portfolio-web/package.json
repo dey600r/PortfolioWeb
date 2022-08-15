@@ -2,6 +2,7 @@
   "name": "portfolio-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dey600r.github.io/PortfolioWeb/",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
