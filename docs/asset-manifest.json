@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/PortfolioWeb/static/css/main.f2fdb555.css",
-    "main.js": "/PortfolioWeb/static/js/main.79e2eec9.js",
+    "main.css": "/PortfolioWeb/static/css/main.5bf59014.css",
+    "main.js": "/PortfolioWeb/static/js/main.d24c91e6.js",
+    "react-syntax-highlighter/refractor-import.js": "/PortfolioWeb/static/js/react-syntax-highlighter/refractor-import.95999288.chunk.js",
     "static/js/787.a8a21f2e.chunk.js": "/PortfolioWeb/static/js/787.a8a21f2e.chunk.js",
-    "static/media/GameEngine1.png": "/PortfolioWeb/static/media/GameEngine1.eebf3ea22cdebf32dc13.png",
-    "static/media/GameEngine1Short.png": "/PortfolioWeb/static/media/GameEngine1Short.4c71a99c1860b598d6df.png",
-    "static/media/guitar-icon2.jpg": "/PortfolioWeb/static/media/guitar-icon2.02f780d0b8e7cac1006a.jpg",
-    "static/media/icon-button-down-gray.png": "/PortfolioWeb/static/media/icon-button-down-gray.54a367bd6dcc46bf1b78.png",
-    "static/media/icon-info-gray.png": "/PortfolioWeb/static/media/icon-info-gray.7f0a94773185b0a0b0a1.png",
     "index.html": "/PortfolioWeb/index.html",
-    "main.f2fdb555.css.map": "/PortfolioWeb/static/css/main.f2fdb555.css.map",
-    "main.79e2eec9.js.map": "/PortfolioWeb/static/js/main.79e2eec9.js.map",
+    "main.5bf59014.css.map": "/PortfolioWeb/static/css/main.5bf59014.css.map",
+    "main.d24c91e6.js.map": "/PortfolioWeb/static/js/main.d24c91e6.js.map",
+    "refractor-import.95999288.chunk.js.map": "/PortfolioWeb/static/js/react-syntax-highlighter/refractor-import.95999288.chunk.js.map",
     "787.a8a21f2e.chunk.js.map": "/PortfolioWeb/static/js/787.a8a21f2e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2fdb555.css",
-    "static/js/main.79e2eec9.js"
+    "static/css/main.5bf59014.css",
+    "static/js/main.d24c91e6.js"
   ]
 }
