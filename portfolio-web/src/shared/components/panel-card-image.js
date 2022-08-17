@@ -1,15 +1,17 @@
 // REACT
 import React from "react";
 
-// VAR
-import gameEngineImage from '../../assets/images/GameEngine1.png';
+// COMPONENTS
+import Constants from "../../core/constants";
 
 function PanelCardImage(props) {
+
+  const dataDetail = props.data;
 
   return (
     <React.Fragment>
       <div className="card-white">
-        <img alt="im" className="image image-card-detail" src={gameEngineImage}/>
+        <img alt={dataDetail.title} className="image image-card-detail" src={Constants.var.baseImages + dataDetail.img}/>
       </div>
     </React.Fragment>
   );

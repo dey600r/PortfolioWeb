@@ -4,14 +4,10 @@ import { Link } from 'react-router-dom';
 
 // MATERIAL
 import { IconButton } from '@material-ui/core';
-// import IconButton from '@mui/material/IconButton';
 
 // COMPONENTS
 import SideMenu from "./sideMenu";
 import Constants from "../../core/constants";
-
-// VAR
-import guitarIcon from '../../assets/images/guitar-icon2.jpg';
 
 function Header() {
   let [openMenu, setOpenMenu] = useState(false);
@@ -22,7 +18,7 @@ function Header() {
       <div className="header header-color">
         <div className="table-row header-row">
           <Link to={Constants.routes.home}>
-            <img alt="Icon" className="header-image-size" src={guitarIcon}/>  
+            <img alt="Icon" className="header-image-size" src={Constants.var.baseImages + 'guitar-icon2.jpg'}/>  
           </Link>
           <div className="all-row">
             <h2 className="header-title">Sergi Drummer</h2>

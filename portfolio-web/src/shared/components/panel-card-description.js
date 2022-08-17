@@ -6,16 +6,36 @@ import { IconButton } from "@material-ui/core";
 import CodeIcon from '@mui/icons-material/Code';
 import SourceIcon from '@mui/icons-material/Source';
 
+// COMPONENTS
+import CustomizedDialogs from "../common/dialog";
+
 function PanelCardDescription(props) {
+
+  let [openDialog, setOpenDialog] = React.useState(false);
+
+  const dataDetail = props.data;
 
   return (
     <React.Fragment>
+      <CustomizedDialogs 
+        open={openDialog} 
+        title={dataDetail.title}
+        code={dataDetail.code}
+        onClickOutside={() => {setOpenDialog(false)}}/>
       <div className="card-dark">
-        <h2>Game Engine {props.id}</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>{dataDetail.title}</h2>
+        <p>{dataDetail.description}</p>
         <div>
-          <IconButton aria-label="Code"><CodeIcon /></IconButton>
-          <IconButton aria-label="Repository"><SourceIcon /></IconButton>
+          {
+            dataDetail.code ? 
+            <IconButton aria-label="Code" onClick={() => setOpenDialog(true)}><CodeIcon /></IconButton> : ''
+          }
+          { 
+            dataDetail.urlRepository ? 
+            <a href={dataDetail.urlRepository} target="_blank" rel="noreferrer">
+              <IconButton aria-label="Repository"><SourceIcon /></IconButton> 
+            </a> : ''
+          }
         </div>
       </div>
     </React.Fragment>

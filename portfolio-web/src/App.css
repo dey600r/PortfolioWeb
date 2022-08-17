@@ -7,6 +7,7 @@
   --color-text-card: #9e9a9a;
   --color-shadow-img: #504344;
   --color-shadow-card: #7c7b7b;
+  --color-button: #8F8989;
   --transition-time: 0.5s;
 }
 
@@ -89,6 +90,10 @@
   padding-bottom: 75px;
 }
 
+.body-dialog {
+  background-color: var(--color-background-body);
+}
+
 .body-home {
   padding-top: 90px;
 }
@@ -96,6 +101,8 @@
 .body-details {
   padding-top: 75px;
 }
+
+/* MENU */
 
 .menu {
   background: var(--color-background-body);
@@ -107,6 +114,8 @@
   padding-right: 4px;
   color: var(--color-background-header);
 }
+
+/* IMAGES */
 
 .image {
   width: 70%;
@@ -158,6 +167,8 @@
 .image-button-down:hover {
   cursor: pointer;
 }
+
+/* CARDS*/
 
 .position-card {
   position: relative;
@@ -232,6 +243,12 @@
   color: var(--color-text-header);
 }
 
+/* DIALOG */
+.title-header-dialog {
+  margin: 0px 0px 0px 0px;
+  color: var(--color-text-header);
+}
+
 /* FOOTER */
 
 .footer {
@@ -269,6 +286,18 @@
 
 .hidde-info {
   display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button-color-header {
+  color: var(--color-text-header) !important;
+}
+
+.button-color {
+  color: var(--color-button) !important;
 }
 
 /* SCROLL BAR */

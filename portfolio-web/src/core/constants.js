@@ -4,8 +4,10 @@ const Constants = {
     home: '/home',
     details: '/details/:id'
   },
-  backgrounds: {
-    body: '#1d1d1f'
+  var: {
+    base: '/PortfolioWeb/',
+    baseImages: '/PortfolioWeb/images/',
+    baseData: '/PortfolioWeb/data/'
   }
 };
 
