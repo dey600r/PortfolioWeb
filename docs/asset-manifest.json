@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PortfolioWeb/static/css/main.5bf59014.css",
-    "main.js": "/PortfolioWeb/static/js/main.d24c91e6.js",
+    "main.css": "/PortfolioWeb/static/css/main.0517f496.css",
+    "main.js": "/PortfolioWeb/static/js/main.f67464ac.js",
     "react-syntax-highlighter/refractor-import.js": "/PortfolioWeb/static/js/react-syntax-highlighter/refractor-import.95999288.chunk.js",
     "static/js/787.a8a21f2e.chunk.js": "/PortfolioWeb/static/js/787.a8a21f2e.chunk.js",
     "index.html": "/PortfolioWeb/index.html",
-    "main.5bf59014.css.map": "/PortfolioWeb/static/css/main.5bf59014.css.map",
-    "main.d24c91e6.js.map": "/PortfolioWeb/static/js/main.d24c91e6.js.map",
+    "main.0517f496.css.map": "/PortfolioWeb/static/css/main.0517f496.css.map",
+    "main.f67464ac.js.map": "/PortfolioWeb/static/js/main.f67464ac.js.map",
     "refractor-import.95999288.chunk.js.map": "/PortfolioWeb/static/js/react-syntax-highlighter/refractor-import.95999288.chunk.js.map",
     "787.a8a21f2e.chunk.js.map": "/PortfolioWeb/static/js/787.a8a21f2e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bf59014.css",
-    "static/js/main.d24c91e6.js"
+    "static/css/main.0517f496.css",
+    "static/js/main.f67464ac.js"
   ]
 }
