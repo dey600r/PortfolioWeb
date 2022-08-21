@@ -1,13 +1,22 @@
 const Constants = {
+  routesParam: {
+    idProject: 'idProject',
+    idDetail: 'idDetail'
+  },
   routes: {
     root: '/',
     home: '/home',
-    details: '/details/:id'
+    details: '/details/:idProject/:idDetail'
   },
-  var: {
+  paths: {
     base: '/PortfolioWeb/',
     baseImages: '/PortfolioWeb/images/',
     baseData: '/PortfolioWeb/data/'
+  },
+  var: {
+    headerJson: 'header-data.json',
+    footerJson: 'footer-data.json',
+    projectsJson: 'projects-data.json'
   }
 };
 

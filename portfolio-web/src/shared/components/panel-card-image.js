@@ -11,7 +11,7 @@ function PanelCardImage(props) {
   return (
     <React.Fragment>
       <div className="card-white">
-        <img alt={dataDetail.title} className="image image-card-detail" src={Constants.var.baseImages + dataDetail.img}/>
+        <img alt={dataDetail.title} className="image image-card-detail" src={Constants.paths.baseImages + dataDetail.image}/>
       </div>
     </React.Fragment>
   );

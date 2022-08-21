@@ -13,11 +13,10 @@ import Footer from './shared/common/footer';
 import Constants from "./core/constants";
 
 function App() {
-  
 
   return (
     <React.Fragment>
-      <Router basename={Constants.var.base}>
+      <Router basename={Constants.paths.base}>
         <div className="App">
           <Header/>
           <Switch>

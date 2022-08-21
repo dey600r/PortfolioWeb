@@ -75,6 +75,10 @@
     padding: 0px 0px 5px 0px;
   }
 
+  h2 {
+    font-size: 1.3em;
+  }
+
   .header-title {
     margin: 0px 0px 0px 0px;
   }
@@ -87,7 +91,19 @@
 }
 
 .body {
-  padding-bottom: 75px;
+  padding: 0px 55px 75px 55px;
+}
+
+@media (max-width: 600px) {
+  .body {
+    padding: 0px 25px 75px 25px;
+  }
+}
+
+@media (max-width: 950px) {
+  .body {
+    padding: 0px 40px 75px 40px;
+  }
 }
 
 .body-dialog {
@@ -110,9 +126,11 @@
 }
 
 .menu-item {
-  padding-left: 3px;
-  padding-right: 4px;
-  color: var(--color-background-header);
+  /* padding-left: 3px;
+  padding-right: 4px; */
+  /* color: var(--color-background-header); */
+  min-width: 50px !important;
+  color: rgba(0, 0, 0, 0.54);
 }
 
 /* IMAGES */
@@ -122,7 +140,6 @@
 }
 
 .image-card {
-  border-radius: 12%;
   box-shadow: 2px 2px 4px var(--color-shadow-card);
 }
 
@@ -186,13 +203,22 @@
   width: 10px;
   color: var(--color-text-card);
   transition: opacity var(--transition-time);
-  opacity: 0;
+  opacity: 1;
+}
+
+.title-card-panel {
+  background-color: var(--color-background-card);
+  margin: 35px 0px 0px 0px;
+  border-radius: 20px;
 }
 
 .title-card {
-  background-color: var(--color-background-card);
-  margin: 35px;
-  border-radius: 15px
+  margin: 15px;
+  color: var(--color-background-header);
+}
+
+.title-card-margin {
+  padding: 10px;
 }
 
 .title-card-description {
@@ -216,8 +242,7 @@
   border-width: 7px;
   border-style: solid;
   border-color: var(--color-background-card);
-  border-radius: 25px;
-  margin: 35px;
+  margin: 30px 0px 0px 0px;
   background: var(--color-background-card)
 }
 
@@ -225,7 +250,6 @@
   background-color: var(--color-background-card);
   padding: 10px;
   margin: -1px;
-  border-radius: 30px;
 }
 
 .card-white {
@@ -241,6 +265,21 @@
 
 .icon {
   color: var(--color-text-header);
+}
+
+@media (max-width: 600px) {
+
+  .title-card {
+    margin: 10px;
+  }
+
+  .title-card-margin {
+    padding: 5px 5px 5px 5px;
+  }
+
+  .card-panel {
+    margin: 15px 0px 0px 0px;
+  }
 }
 
 /* DIALOG */
@@ -298,6 +337,10 @@
 
 .button-color {
   color: var(--color-button) !important;
+}
+
+.border {
+  border-radius: 15px;
 }
 
 /* SCROLL BAR */

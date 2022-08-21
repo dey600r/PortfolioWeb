@@ -9,22 +9,31 @@ import Constants from "../core/constants";
 
 function Details() {
 
-  let { id } = useParams();
+  let params = useParams();
 
-  const [dataDetails , setData]=React.useState()
+  const [dataParams , setParams] = React.useState(null);
+  const [dataDetails , setData] = React.useState(null);
 
-// Fetch Function   
-  fetch(Constants.var.baseData + 'detail-data.json').then(
-    function(res){
-    return res.json();
-  }).then(function(data){
-  // store Data in State Data Variable
-    setData(data.data.find(x => x.id == id));
-  }).catch(
-    function(err){
-      console.log(err, ' error')
+  const getDataDetail = () => {
+    fetch(Constants.paths.baseData + Constants.var.projectsJson).then(res => {
+      return res.json();
+    }).then(data => {
+      setData(data.projects
+        .find(x => x.id == params[Constants.routesParam.idProject]).details
+        .find(x => x.id == params[Constants.routesParam.idDetail]));
+      setParams(params);
+    }).catch(err => {
+        console.log(err, 'ERROR: Loading data on details')
+    })
+  }
+
+  React.useEffect(()=>{
+    if(dataParams == null ||
+      dataParams[Constants.routesParam.idProject] != params[Constants.routesParam.idProject] ||
+      dataParams[Constants.routesParam.idDetail] != params[Constants.routesParam.idDetail]) {
+      getDataDetail();
     }
-  )
+  }, [params])
 
   return (
     <React.Fragment>
@@ -33,12 +42,12 @@ function Details() {
           <PanelTitle 
             title={dataDetails.title} 
             description={dataDetails.description}
-            img={dataDetails.mainImage}
+            img={dataDetails.secundaryImage}
             url={dataDetails.urlRepository}/>
           {
             dataDetails.details.map(detail => (
-              <PanelCard key={detail.id} data={detail}></PanelCard>
-            ))
+                <PanelCard key={detail.id} data={detail}></PanelCard>
+              ))
           }
         </div>
       }

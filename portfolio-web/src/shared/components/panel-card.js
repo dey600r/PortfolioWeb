@@ -14,7 +14,7 @@ function PanelCard(props) {
 
   return (
     <React.Fragment>
-      <div className="card-panel">
+      <div className="card-panel border">
         <Grid container spacing={0}>
           { dataDetail.id%2=== 0 ? <Grid item xs={12} sm={6} md={7} lg={8}>
             <PanelCardDescription data={dataDetail}/>

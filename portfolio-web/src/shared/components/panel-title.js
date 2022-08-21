@@ -16,18 +16,18 @@ function PanelCardTitle(props) {
 
   return (
     <React.Fragment>
-      <div className="title-card">
+      <div className="title-card-panel border">
         <div className="table-row">
           <a href={props.url} target="_blank" rel="noreferrer">
             <IconButton aria-label="Code"><SourceIcon /></IconButton>
           </a>
-          <h2 className="all-row">{props.title}</h2>
+          <h2 className="all-row title-card">{props.title}</h2>
           <IconButton aria-label="Code" onClick={() => {setShowDescription(!showDescription)}}>{showDescription ? <KeyboardArrowUp/> : <KeyboardArrowDown/>}</IconButton>
         </div>
         {
           !showDescription ? '' : <div className="title-card-description">
             <p>{props.description}</p>
-            <img alt={props.img} className="image image-card-detail" src={Constants.var.baseImages + props.img}/>
+            <img alt={props.img} className="image image-card-detail" src={Constants.paths.baseImages + props.img}/>
           </div>
         }
       </div>

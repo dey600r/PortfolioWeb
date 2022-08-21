@@ -22,8 +22,8 @@ function PanelCardDescription(props) {
         title={dataDetail.title}
         code={dataDetail.code}
         onClickOutside={() => {setOpenDialog(false)}}/>
-      <div className="card-dark">
-        <h2>{dataDetail.title}</h2>
+      <div className="card-dark border">
+        <h2 className="title-card">{dataDetail.title}</h2>
         <p>{dataDetail.description}</p>
         <div>
           {
